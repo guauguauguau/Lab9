@@ -3,7 +3,7 @@ def encode(password):
     password = str(password)
     encoded = ""
     for d in password:
-        encoded += str(int(d)+3)
+        encoded += str((int(d)+3) % 10)
     return encoded
 
 # Jose Pulido
@@ -12,7 +12,7 @@ def decode(password):
 
     decoded_password = ""
     for d in password:
-        decoded_password += str(int(d)-3)
+        decoded_password += str((int(d)-3) % 10)
     return decoded_password
 
 
