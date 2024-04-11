@@ -1,3 +1,4 @@
+# Thomas Neubert
 def encode(password):
     password = str(password)
     encoded = ""
